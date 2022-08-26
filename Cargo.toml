@@ -1,0 +1,13 @@
+[package]
+name = "x86featurelevels"
+version = "0.1.0"
+edition = "2021"
+authors = ["CKingX"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.release]
+overflow-checks = true
+lto = "thin"
