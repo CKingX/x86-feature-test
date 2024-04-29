@@ -1,9 +1,15 @@
 [package]
 name = "x86featurelevels"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["CKingX"]
 license = "MIT"
+description = "x86featurelevels determines which x86 microarchitectural level is supported by your CPU."
+homepage = "https://github.com/CKingX/x86-feature-test"
+repository = "https://github.com/CKingX/x86-feature-test"
+keywords = ["x86-64", "microarchitectural", "avx", "sse"]
+categories = ["command-line-utilities"]
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

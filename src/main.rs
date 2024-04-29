@@ -23,14 +23,14 @@ fn main() {
         let sse3 = test_feature(is_x86_feature_detected!("sse3"));
         println!("sse3: {sse3}");
 
+        let ssse3 = test_feature(is_x86_feature_detected!("ssse3"));
+        println!("ssse3: {ssse3}");
+
         let sse4_1 = test_feature(is_x86_feature_detected!("sse4.1"));
         println!("sse4.1: {sse4_1}");
 
         let sse4_2 = test_feature(is_x86_feature_detected!("sse4.2"));
         println!("sse4.2: {sse4_2}");
-
-        let ssse3 = test_feature(is_x86_feature_detected!("ssse3"));
-        println!("ssse3: {ssse3}");
 
         println!("");
         println!("Testing x86-64-v3 features (Haswell level)");
@@ -55,6 +55,9 @@ fn main() {
 
         let lzcnt = test_feature(is_x86_feature_detected!("lzcnt"));
         println!("lzcnt: {lzcnt}");
+
+        let movbe = test_feature(is_x86_feature_detected!("movbe"));
+        println!("movbe: {movbe}");
 
         let xsave = test_feature(is_x86_feature_detected!("xsave"));
         println!("xsave: {xsave}");
